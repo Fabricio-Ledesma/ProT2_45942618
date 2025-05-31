@@ -13,13 +13,12 @@
 <body>
 
   <!-- Navbar principal -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#iniciopag">
+      <a class="navbar-brand text-white" href="index.html" title="Inicio">
         <img src="images/favicon-32x32.png" alt="Logo TridentDEV" width="30" height="30" class="d-inline-block align-text-top">
-        TridentDEV
+        TridentDEV&gt;
       </a>
-
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
         <span class="navbar-toggler-icon"></span>
@@ -27,21 +26,31 @@
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link active" href="#iniciopag">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#trabajos">Proyectos</a></li>
-          <li class="nav-item"><a class="nav-link" href="aboutUs.html">Acerca de</a></li>
-          <li class="nav-item"><a class="nav-link" href="team.html">Quiénes Somos</a></li>
+          <li class="nav-item">
+            <a class="nav-link text-white active" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html#proyectos">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="aboutUs.html">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="team.html">Quiénes Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="register.html">Regístrate</a>
+          </li>
         </ul>
-
         <form class="d-flex" role="search" onsubmit="return false;">
           <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
+          <button class="btn btn-outline-success" type="submit" title="Buscar">Buscar</button>
         </form>
       </div>
     </div>
   </nav>
 
-  <!-- Sección principal -->
+  <!-- Sección principal / Hero -->
   <header class="hero text-center py-5">
     <div class="logo mb-3">
       TridentDEV &gt;
@@ -64,10 +73,13 @@
       <p class="mb-5">Descubre cómo aplicamos IA y automatización en sectores clave.</p>
 
       <div class="row">
+        <!-- Proyecto 1 -->
         <div class="col-md-4 mb-4">
           <div class="proyecto-card p-3 h-100">
             <h3>🌾 <strong>AgTech y Ganadería Inteligente</strong></h3>
-            <p class="justificado">Impulsamos la innovación en el campo con tecnologías de monitoreo en tiempo real, análisis predictivo y automatización para cultivos y producción animal.</p>
+            <p class="justificado">
+              Impulsamos la innovación en el campo con tecnologías de monitoreo en tiempo real, análisis predictivo y automatización para cultivos y producción animal.
+            </p>
             <ul class="text-start small">
               <li>Collares con sensores para monitoreo de salud, ubicación y actividad.</li>
               <li>Alimentación y pesaje según parámetros individuales.</li>
@@ -77,10 +89,13 @@
             <a href="#contacto" class="btn btn-outline-primary btn-sm mt-2">Explorar soluciones agropecuarias</a>
           </div>
         </div>
+        <!-- Proyecto 2 -->
         <div class="col-md-4 mb-4">
           <div class="proyecto-card p-3 h-100">
             <h3>🤖 <strong>Automatización Empresarial</strong></h3>
-            <p class="justificado">Diseñamos soluciones inteligentes que transforman los procesos internos de empresas del agro y otros sectores, optimizando la eficiencia operativa, la toma de decisiones y la interacción con los clientes.</p>
+            <p class="justificado">
+              Diseñamos soluciones inteligentes que transforman los procesos internos de empresas del agro y otros sectores, optimizando la eficiencia operativa, la toma de decisiones y la interacción con los clientes.
+            </p>
             <ul class="text-start justificado small">
               <li>Gestión automatizada de stock, logística y trazabilidad de productos</li>
               <li>Integración con sistemas contables, CRM y plataformas de gestión agrícola</li>
@@ -90,10 +105,13 @@
             <a href="#contacto" class="btn btn-outline-primary btn-sm mt-2">Explorar herramientas empresariales</a>
           </div>
         </div>
+        <!-- Proyecto 3 -->
         <div class="col-md-4 mb-4">
           <div class="proyecto-card p-3 h-100">
             <h3>🚀<strong>Soluciones para Emprendedores y Pymes</strong></h3>
-            <p class="justificado">Brindamos herramientas fáciles de usar para que pequeños negocios y emprendedores puedan aprovechar la automatización e inteligencia artificial sin necesidad de grandes inversiones o conocimientos técnicos.</p>
+            <p class="justificado">
+              Brindamos herramientas fáciles de usar para que pequeños negocios y emprendedores puedan aprovechar la automatización e inteligencia artificial sin necesidad de grandes inversiones o conocimientos técnicos.
+            </p>
             <ul class="text-start justificado small">
               <li>Plataformas intuitivas para gestionar ventas, inventarios y clientes.</li>
               <li>Automatización simple para campañas de marketing digital y atención al cliente</li>
@@ -105,51 +123,57 @@
         </div>
       </div>
     </div>
-    <!-- Los botones de herramientas, momentaneamente no seran funcionales -->
+    <!-- Los botones de herramientas, momentáneamente no serán funcionales -->
   </section>
 
-  <!-- Carrusel de imágenes (a las imagenes las genere con con IA) -->
-<section id="trabajos" class="py-5 text-center bg-dark">
-  <div class="container">
-    <h2 class="text-center mb-4">Tecnología TridentDEV en acción</h2>
-    <div id="carouselTrident" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner rounded shadow-sm">
-        <div class="carousel-item active">
-          <img src="images/campoInteligente1.jpeg" class="d-block w-80" alt="Campo Inteligente 1">
+  <!-- Carrusel de imágenes responsivo con Bootstrap 5 -->
+  <section id="trabajos" class="py-5 bg-dark text-white text-center">
+    <div class="container">
+      <h2 class="mb-4">Tecnología TridentDEV en acción</h2>
+      <div id="carouselTrident" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner rounded shadow">
+          <div class="carousel-item active">
+            <img src="images/campoInteligente1.jpeg" class="d-block w-100 img-fluid" alt="Campo Inteligente 1">
+          </div>
+          <div class="carousel-item">
+            <img src="images/empresaInteligente1.jpg" class="d-block w-100 img-fluid" alt="Empresa Inteligente 1">
+          </div>
+          <div class="carousel-item">
+            <img src="images/campoInteligente2.jpg" class="d-block w-100 img-fluid" alt="Campo Inteligente 2">
+          </div>
+          <div class="carousel-item">
+            <img src="images/tridentDevEmpresarial1 (2).png" class="d-block w-100 img-fluid" alt="Equipo de Innovación Tecnológica TridentDEV">
+          </div>
         </div>
-        <div class="carousel-item">
-          <img src="images/empresaInteligente1.jpg" class="d-block w-80" alt="Empresa Inteligente 1">
+        <!-- Controles de navegación -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTrident" data-bs-slide="prev" aria-label="Anterior">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselTrident" data-bs-slide="next" aria-label="Siguiente">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Botón de contacto -->
+  <div class="text-center mt-4">
+    <a href="aboutUs.html#contactanos" class="btn btn-primary mt-3 cta-button">Contáctanos</a>
+  </div>
+
+  <!-- Footer responsive mediante Bootstrap -->
+  <footer class="bg-dark text-white py-3 mt-4">
+    <div class="container">
+      <div class="row text-center text-md-start align-items-center">
+        <div class="col-12 col-md-6 mb-2 mb-md-0">
+          <p class="mb-0">&copy; 2025 TridentDEV. Todos los derechos reservados.</p>
         </div>
-        <div class="carousel-item">
-          <img src="images/campoInteligente2.jpg" class="d-block w-80" alt="Campo Inteligente 2">
-        </div>
-        <div class="carousel-item">
-          <img src="images/tridentDevEmpresarial1 (2).png" class="d-block w-80" alt="equipo de Innovación tecnológica TridentDEV>">
+        <div class="col-12 col-md-6 text-md-end">
+          <span>Stay Hard</span>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselTrident" data-bs-slide="prev" aria-label="Anterior">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselTrident" data-bs-slide="next" aria-label="Siguiente">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      </button>
     </div>
-  </div>
-  
-</section>
-<div class="text-center mt-4">
-  <a href="aboutUs.html#contactanos" class="btn btn-primary mt-3 cta-button">Contáctanos</a>
-</div>
-
-     <!-- Footer -->
-<footer class="bg-dark text-white text-center py-3 mt-4 position-relative">
-  <div class="container">
-    <p class="mb-0">&copy; 2025 TridentDEV. Todos los derechos reservados.</p>
-    <span class="position-absolute end-0 top-50 translate-middle-y me-3">Stay Hard</span>
-  </div>
-</footer>
-
-
+  </footer>
 
   <!-- Scripts Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
